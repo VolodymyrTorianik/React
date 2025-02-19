@@ -1,0 +1,41 @@
+.homework-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header, .footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 20%;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.content {
+  width: 80%;
+  padding: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
