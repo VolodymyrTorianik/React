@@ -1,0 +1,70 @@
+ body {
+  background-color: antiquewhite;
+  padding: 0px;
+  margin: 0px;
+ }
+
+
+ nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(57, 82, 193);
+  padding: 20px 40px;
+  color:azure;
+ }
+
+ .navigation {
+  display: flex;
+  gap: 40px;
+ }
+
+ .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  width: 100%;
+ }
+ 
+ .users, .posts, .comments {
+  padding: 10px 5px;
+  border: 1px solid rgb(97, 97, 97);
+  margin: 10px;
+
+ }
+
+ .users {
+  background-color: rgb(197, 127, 255);
+ }
+
+ .posts {
+  background-color: rgba(19, 154, 71, 0.791);
+ }
+
+
+ .comments {
+  background-color: rgb(23, 72, 219);
+ }
+
+
+ .wrapper {
+
+ display: flex;
+ justify-content: space-between;
+  width: 800px;
+}
+
+.showDetails {
+  color: rgb(48, 47, 47);
+  background-color: rgb(207, 158, 248);
+  width: 800px;
+ }
+ .copy {
+  text-align: center;
+ }
+ 
+button {
+  margin: 0px 10px;
+}
