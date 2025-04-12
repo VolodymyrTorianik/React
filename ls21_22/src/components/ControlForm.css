@@ -1,0 +1,68 @@
+.MyFirstForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid brown;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.MyFirstForm h2, h4 {
+    text-align: center;
+    color: #fff;
+}
+
+.head {
+
+    background-color: brown;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.MyFirstForm input, select, textarea, button{
+    margin: 5px 50px;
+    height: 40px;
+    border: 1px solid #a5c6cf;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.MyFirstForm label {
+    margin: 0 55px;
+    color: rgb(97, 97, 96);
+    text-transform: uppercase;
+}
+
+.MyFirstForm input[type="date"], select {
+    color: rgb(97, 97, 96);
+}
+
+
+.MyFirstForm button {
+    background-color: brown;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.MyFirstForm button:hover {
+    background-color: rgb(99, 43, 43);
+    cursor: pointer;
+}
+
+.MyFirstForm button:active {
+    background-color: rgb(105, 30, 30);
+    cursor: pointer;
+}
+
+
+.MyFirstForm input:focus, select:focus, textarea:focus {
+    background-color:rgb(201, 226, 218);
+    opacity: 0.4;
+}
