@@ -1,0 +1,14 @@
+atob
+btoa
+fetch
+global
+crypto
+setTimeout
+setInterval
+performance
+setImmediate
+clearTimeout
+clearInterval
+clearImmediate
+queueMicrotask
+structuredClone

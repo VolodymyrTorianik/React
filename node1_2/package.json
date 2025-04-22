@@ -1,0 +1,13 @@
+{
+    "name": "my-node-project",
+    "school": "IT Step",
+    "description": "First Node JS home work",
+    "projectAuthor": "Volodymyr",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "dayjs": "^1.11.13"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    }
+}
