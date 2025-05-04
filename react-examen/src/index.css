@@ -1,0 +1,543 @@
+body {
+
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+
+}
+
+h1, h2, h3 {
+
+  text-align: center;
+
+}
+
+.logo {
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+header {
+  background-color: #333;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-link {
+  margin-left: auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cart-link:hover {
+  background-color: #45a049;
+}
+
+.cart-logo {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.navbar {
+
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.navbar a {
+
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-transform: capitalize;
+
+}
+
+.navbar a:hover {
+
+  background-color: #555;
+
+}
+
+
+
+.search-container {
+
+  text-align: center;
+  margin: 20px 0;
+
+}
+
+.search-container input {
+
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+}
+
+.sort-container {
+  padding-left: 20px;
+}
+
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.product-card {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  height: 60px; 
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  color:#333;
+}
+
+.product-card p {
+  font-size: 24px;
+  color: green;
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
+.product-card a {
+  text-decoration: none;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.categories-list a {
+
+  text-transform: capitalize;
+
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.categories a {
+  padding: 10px 20px;
+  background-color: #eee;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+
+}
+
+.categories a:hover {
+  background-color: #ddd;
+}
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.category-page h2 {
+  text-transform: capitalize;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.total-price {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+
+button {
+  padding: 8px 15px;
+  background-color: #ff5757;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:active {
+  background-color: #832828;
+}
+
+
+.product-page {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.product-image {
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product-price {
+  color: #e91e63;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.product-description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+
+.burger-menu {
+  display: none; 
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-transform: capitalize;
+}
+
+.navbar.open {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1919;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.navbar a {
+  color: rgb(247, 247, 247);
+  padding: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+.checkout-page {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.checkout-form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+button[type="submit"] {
+  padding: 0.7rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.checkout-button {
+  padding: 0.7rem 1.2rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+  background-color: #218838;
+}
+
+
+@media (max-width: 768px) {
+
+
+  header {
+    padding: 10px 30px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 10px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-page {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .product-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .categories-list a {
+
+    text-transform: capitalize;
+  
+  }
+
+  .product-details {
+    align-items: center;
+    text-align: center;
+  }
+
+  .add-to-cart-btn {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .product-price {
+    font-size: 1.3rem;
+  }
+
+  .product-description {
+    font-size: 0.95rem;
+  }
+
+  .burger-menu {
+    display: flex; 
+  }  
+  .navbar {
+    display: none; 
+    flex-direction: column;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+
+  .navbar.open {
+    display: flex; 
+    text-transform: capitalize;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  header {
+    padding: 10px 30px;
+  }
+
+  .search-container input {
+    width: 90%;
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categories-list a {
+
+    text-transform: capitalize;
+  
+  }
+
+  .product-page {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .product-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .product-details {
+    align-items: center;
+    text-align: center;
+  }
+
+  .add-to-cart-btn {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .product-price {
+    font-size: 1.3rem;
+  }
+
+  .product-description {
+    font-size: 0.95rem;
+  }
+
+  .burger-menu {
+    display: flex; 
+  }
+
+  .navbar {
+    display: none; 
+    flex-direction: column;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+
+  .navbar.open {
+    display: flex; 
+    text-transform: capitalize;
+  }
+
+}
