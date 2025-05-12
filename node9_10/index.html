@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сортування продуктів</title>
+</head>
+<body>
+  <h1>Продукти</h1>
+  <button onclick="sortProducts('name')">Сортувати за іменем</button>
+  <button onclick="sortProducts('price')">Сортувати за ціною</button>
+
+  <ul id="products-list"></ul>
+
+  <script>
+ 
+    async function fetchProducts() {
+      const response = await fetch('http://localhost:3000/products');
+      const products = await response.json();
+      displayProducts(products);
+    }
+
+
+    function displayProducts(products) {
+      const productsList = document.getElementById('products-list');
+      productsList.innerHTML = '';
+      products.forEach(product => {
+        const li = document.createElement('li');
+        li.textContent = `${product.title} - ${product.price}₴`;
+        productsList.appendChild(li);
+      });
+    }
+
+
+    async function sortProducts(sortBy) {
+      const response = await fetch('http://localhost:3000/sort-products', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ sortBy }),
+      });
+      const sortedProducts = await response.json();
+      displayProducts(sortedProducts);
+    }
+
+    
+    window.onload = fetchProducts;
+  </script>
+</body>
+</html>
