@@ -1,0 +1,65 @@
+/* Базові стилі */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin: 1rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.dreams-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dream-link {
+  display: block;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background: #f9f9f9;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.dream-link:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ecf0f1;
+  margin-top: 2rem;
+}
